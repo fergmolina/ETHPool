@@ -75,7 +75,7 @@ And then type:
 npx hardhat verify --network ropsten 0x0000000000000000000000000000000000000000
 ```
 
-You can check my verified contract: [a link](https://ropsten.etherscan.io/address/0x09b24cE06642c76a955176eE8464d55c3427493A#code)
+You can check my verified contract: [https://ropsten.etherscan.io/address/0x09b24cE06642c76a955176eE8464d55c3427493A#code](https://ropsten.etherscan.io/address/0x09b24cE06642c76a955176eE8464d55c3427493A#code)
 
 ### 3) Interact with the contract
 
