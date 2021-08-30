@@ -47,15 +47,41 @@ Following patterns were used in this project:
 
 ### 2) Deploy your contract
 
-Deploy the contract to any Ethereum testnet of your preference. Keep record of the deployed address.
+Deploy the contract to any Ethereum testnet of your preference. Keep record of the deployed address. :heavy_check_mark:
+
+For deploying the contract, I used the ```/scripts/deploy.js``` script. You should type this:
+```
+npx hardhat run scripts/deploy.js --network ropsten
+```
+
+Then, you should type into de .env file your new contract in the ROPSTEN_ADDRESS 
+```
+ROPSTEN_ADDRESS = 0x0000000000000000000000000000000000000000
+```
 
 Bonus:
 
-- Verify the contract in Etherscan
+- Verify the contract in Etherscan :heavy_check_mark:
+
+First, you need to install the hardhat-etherscan plugin:
+```
+npm install --save-dev @nomiclabs/hardhat-etherscan
+```
+
+And then type: 
+```
+npx hardhat verify --network ropsten 0x0000000000000000000000000000000000000000
+```
+
+You can check my verified contract: [a link](https://ropsten.etherscan.io/address/0x09b24cE06642c76a955176eE8464d55c3427493A#code)
 
 ### 3) Interact with the contract
 
-Create a script (or a Hardhat task) to query the total amount of ETH held in the contract.
+Create a script (or a Hardhat task) to query the total amount of ETH held in the contract. :heavy_check_mark:
 
 _You can use any library you prefer: Ethers.js, Web3.js, Web3.py, eth-brownie_
 
+For this, you should type
+```
+npx hardhat run scripts/queryBalance.js --network ropsten
+```
