@@ -49,12 +49,14 @@ Following patterns were used in this project:
 
 Deploy the contract to any Ethereum testnet of your preference. Keep record of the deployed address. :heavy_check_mark:
 
-For deploying the contract, I used the ```/scripts/deploy.js``` script. You should type this:
+First. you need to renamed the .env.example to .env and use your own credentials.
+
+Then, for deploying the contract I used the ```/scripts/deploy.js``` script. You should type this:
 ```
 npx hardhat run scripts/deploy.js --network ropsten
 ```
 
-Then, you should type into de .env file your new contract in the ROPSTEN_ADDRESS 
+Last thing you should do is to type into the .env file your new contract in the ROPSTEN_ADDRESS 
 ```
 ROPSTEN_ADDRESS = 0x0000000000000000000000000000000000000000
 ```
